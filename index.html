@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog - ¡Descubre mis artículos!</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap" rel="stylesheet">
+    <!-- Agregamos la librería Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header class="barra-superior">
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de mí</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Coloca aquí la sección de los botones de cambio de colores -->
+    <div class="color-buttons">
+        <button id="color1">
+            <img src="image/luz.png" alt="Color 1">
+        </button>
+        <button id="color2">
+            <img src="image/noche.png" alt="Color 2">
+        </button>
+        <button id="color3">
+            <img src="image/pastel.png" alt="Color 3">
+        </button>
+        <button id="color4">
+            <img src="image/barbie.png" alt="Color 4">
+        </button>
+    </div>
+
+    <!-- Creamos un contenedor para el carrusel -->
+    <div class="carrusel-container">
+        <!-- Agregamos las flechas de navegación arriba del carrusel -->
+        <div class="swiper-button-up"></div>
+        <div class="swiper-button-down"></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Coloca aquí los blogs dentro del carrusel -->
+                <main class="swiper-slide">
+                    <section class="contenido">
+                        <h1>Bienvenido a mi blog1</h1>
+            <p>Este es mi primer artículo.</p>
+            <img src="imagen.jpg" alt="Imagen del artículo">
+            <p>Si quieres leer más, <a href="#">haz clic aquí</a>.</p>
+                    </section>
+                </main>
+                <main class="swiper-slide">
+                    <section class="contenido">
+                        <h1>Bienvenido a mi blog2</h1>
+            <p>Este es mi primer artículo.</p>
+            <img src="imagen.jpg" alt="Imagen del artículo">
+            <p>Si quieres leer más, <a href="#">haz clic aquí</a>.</p>
+                    </section>
+                </main>
+                <main class="swiper-slide">
+                    <section class="contenido">
+                        <h1>Bienvenido a mi blog3</h1>
+            <p>Este es mi primer artículo.</p>
+            <img src="imagen.jpg" alt="Imagen del artículo">
+            <p>Si quieres leer más, <a href="#">haz clic aquí</a>.</p>
+                    </section>
+                </main>
+                <main class="swiper-slide">
+                    <section class="contenido">
+                        <h1>Bienvenido a mi blog4</h1>
+            <p>Este es mi primer artículo.</p>
+            <img src="imagen.jpg" alt="Imagen del artículo">
+            <p>Si quieres leer más, <a href="#">haz clic aquí</a>.</p>
+                    </section>
+                </main>
+                <main class="swiper-slide">
+                    <section class="contenido">
+                        <h1>Bienvenido a mi blog5</h1>
+            <p>Este es mi primer artículo.</p>
+            <img src="imagen.jpg" alt="Imagen del artículo">
+            <p>Si quieres leer más, <a href="#">haz clic aquí</a>.</p>
+                    </section>
+                </main>
+                <!-- Agrega los demás blogs como swiper-slide -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Aquí se añade la imagen debajo de los blogs con efecto de paralaje -->
+    <main>
+        <section class="parallax-element"> <!-- Agregar la clase .parallax-element para el efecto de paralaje -->
+            <img src="https://creatorspace.imgix.net/users/clfbrzthu00dkr10yeroxmokf/22sdtvfxk25PX9Ho-profile_gus2131.png" alt="Imagen debajo de los blogs">
+        </section>
+    </main>
+
+    <!-- Botón flotante de Ko-fi -->
+    <div class="kofi-widget-btn-container">
+        <div class="kofi-widget-btn">
+            <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+            <script type='text/javascript'>kofiwidget2.init('Mas contenido', '#29abe0', 'W7W0KJJDX');kofiwidget2.draw();</script>
+        </div>
+    </div>
+
+    <footer class="pie-de-pagina pie-visible">
+        <p>&copy; 2023 Mi Blog. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript y otros enlaces de scripts -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
